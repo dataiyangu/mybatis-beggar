@@ -16,5 +16,7 @@ public class Test {
         SqlSession sqlSession = new SqlSession(new Configuration(),new Executor());
         BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
         mapper.selectBlogById(1);
+
+
     }
 }

@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49424c13-5626-4abf-a403-5e67d259cec3" name="Default Changelist" comment="" />
+    <list default="true" id="49424c13-5626-4abf-a403-5e67d259cec3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/Executor/CachingExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/Executor/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/Executor/ResultSetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/Executor/SimpleExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/Executor/StatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/TestMybatis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/annotation/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/annotation/Intercepts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/annotation/Select.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/bingding/MapperProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/bingding/MapperProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/bingding/MapperRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/cache/Cachekey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/plugin/Interceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/plugin/InterceptorChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/plugin/Invocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/plugin/Plugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/session/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/session/DefaultSqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v2/session/SqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v1/mapper/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v1/mapper/BlogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v1/mapper/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leesin/mybatis/v1/mapper/Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +38,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -22,6 +55,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Z0h40ntrjEr6LS0Yp2slQvhq4h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,12 +65,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leesin.mybatis.v2" />
+      <recent name="com.leesin.mybatis.v2.Executor" />
+      <recent name="com.leesin.mybatis.v2.bingding" />
       <recent name="com.leesin.mybatis.v1.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git_home\mybatis-beggar\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -67,7 +115,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583981723558</updated>
-      <workItem from="1583981724942" duration="4262000" />
+      <workItem from="1583981724942" duration="25853000" />
+      <workItem from="1584061081202" duration="652000" />
+      <workItem from="1584061751586" duration="2280000" />
     </task>
     <servers />
   </component>
@@ -75,29 +125,57 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2578" y="428" key="#com.intellij.ide.util.MemberChooser" timestamp="1583983454127">
+    <state x="2445" y="515" width="684" height="294" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1584054842694">
       <screen x="0" y="0" width="3440" height="1410" />
     </state>
-    <state x="2578" y="428" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1410@0.0.3440.1410" timestamp="1583983454127" />
-    <state width="1289" height="403" key="GridCell.Tab.0.bottom" timestamp="1583987868080">
+    <state x="2445" y="515" width="684" height="294" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.3440.1410@0.0.3440.1410" timestamp="1584054842694" />
+    <state x="2578" y="428" width="390" height="646" key="#com.intellij.ide.util.MemberChooser" timestamp="1584024073333">
       <screen x="0" y="0" width="3440" height="1410" />
     </state>
-    <state width="1289" height="403" key="GridCell.Tab.0.bottom/0.0.3440.1410@0.0.3440.1410" timestamp="1583987868080" />
-    <state width="1289" height="403" key="GridCell.Tab.0.center" timestamp="1583987868080">
+    <state x="2578" y="428" width="390" height="646" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1410@0.0.3440.1410" timestamp="1584024073333" />
+    <state width="1669" height="403" key="GridCell.Tab.0.bottom" timestamp="1584060962905">
       <screen x="0" y="0" width="3440" height="1410" />
     </state>
-    <state width="1289" height="403" key="GridCell.Tab.0.center/0.0.3440.1410@0.0.3440.1410" timestamp="1583987868080" />
-    <state width="1289" height="403" key="GridCell.Tab.0.left" timestamp="1583987868080">
+    <state width="1669" height="403" key="GridCell.Tab.0.bottom/0.0.3440.1410@0.0.3440.1410" timestamp="1584060962905" />
+    <state width="1669" height="403" key="GridCell.Tab.0.center" timestamp="1584060962905">
       <screen x="0" y="0" width="3440" height="1410" />
     </state>
-    <state width="1289" height="403" key="GridCell.Tab.0.left/0.0.3440.1410@0.0.3440.1410" timestamp="1583987868080" />
-    <state width="1289" height="403" key="GridCell.Tab.0.right" timestamp="1583987868080">
+    <state width="1669" height="403" key="GridCell.Tab.0.center/0.0.3440.1410@0.0.3440.1410" timestamp="1584060962905" />
+    <state width="1669" height="403" key="GridCell.Tab.0.left" timestamp="1584060962905">
       <screen x="0" y="0" width="3440" height="1410" />
     </state>
-    <state width="1289" height="403" key="GridCell.Tab.0.right/0.0.3440.1410@0.0.3440.1410" timestamp="1583987868080" />
-    <state x="2436" y="323" width="672" height="678" key="search.everywhere.popup" timestamp="1583983055935">
+    <state width="1669" height="403" key="GridCell.Tab.0.left/0.0.3440.1410@0.0.3440.1410" timestamp="1584060962905" />
+    <state width="1669" height="403" key="GridCell.Tab.0.right" timestamp="1584060962905">
       <screen x="0" y="0" width="3440" height="1410" />
     </state>
-    <state x="2436" y="323" width="672" height="678" key="search.everywhere.popup/0.0.3440.1410@0.0.3440.1410" timestamp="1583983055935" />
+    <state width="1669" height="403" key="GridCell.Tab.0.right/0.0.3440.1410@0.0.3440.1410" timestamp="1584060962905" />
+    <state x="1871" y="218" width="1501" height="1065" key="SettingsEditor" timestamp="1584063763945">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="1871" y="218" width="1501" height="1065" key="SettingsEditor/0.0.3440.1410@0.0.3440.1410" timestamp="1584063763945" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1584023986315">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.3440.1410@0.0.3440.1410" timestamp="1584023986315" />
+    <state x="2174" y="445" key="Vcs.Push.Dialog.v2" timestamp="1584014580337">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="2174" y="445" key="Vcs.Push.Dialog.v2/0.0.3440.1410@0.0.3440.1410" timestamp="1584014580337" />
+    <state x="2317" y="467" key="extract.method.dialog" timestamp="1584060250896">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="2317" y="467" key="extract.method.dialog/0.0.3440.1410@0.0.3440.1410" timestamp="1584060250896" />
+    <state x="2223" y="438" width="700" height="530" key="recent.locations.popup" timestamp="1584007248540">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="2223" y="438" width="700" height="530" key="recent.locations.popup/0.0.3440.1410@0.0.3440.1410" timestamp="1584007248540" />
+    <state x="2324" y="341" key="refactoring.ChangeSignatureDialog" timestamp="1584012419067">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="2324" y="341" key="refactoring.ChangeSignatureDialog/0.0.3440.1410@0.0.3440.1410" timestamp="1584012419067" />
+    <state x="2436" y="323" width="672" height="678" key="search.everywhere.popup" timestamp="1584063941980">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="2436" y="323" width="672" height="678" key="search.everywhere.popup/0.0.3440.1410@0.0.3440.1410" timestamp="1584063941980" />
   </component>
 </project>
