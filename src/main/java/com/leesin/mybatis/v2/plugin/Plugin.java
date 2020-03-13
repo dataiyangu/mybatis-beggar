@@ -30,24 +30,17 @@ public class Plugin implements InvocationHandler {
         this.interceptor = interceptor;
     }
 
-    
-    
     /**
      * 对被代理对象进行代理，返回代理类
      * @param obj
      * @param interceptor
      * @return
      */
-    
     public static Object wrap(Object obj, Interceptor interceptor) {
         Class<?> clazz = obj.getClass();
         return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), new Plugin(obj, interceptor));
     }
 
-    
-    
-    
-    
     /**
      * @description:
      * @name: invoke

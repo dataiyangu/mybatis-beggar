@@ -12,9 +12,9 @@ import java.util.Map;
  * @version:
  * @modified By:
  */
-public class CachingExecutor {
+public class CachingExecutor implements Executor{
     private Executor delegate;
-    private static final Map<Integer, Object> cache = new HashMap<>();
+    private static final Map<Integer, Object> cache = new HashMap<Integer, Object>();
 
     public CachingExecutor(Executor delegate) {
         this.delegate = delegate;

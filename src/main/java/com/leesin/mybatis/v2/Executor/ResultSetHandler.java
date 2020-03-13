@@ -1,9 +1,9 @@
 package com.leesin.mybatis.v2.Executor;
 
 import com.leesin.mybatis.v2.plugin.Plugin;
-import com.sun.org.apache.xpath.internal.operations.String;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,7 +17,7 @@ import java.util.HashMap;
  * @modified By:
  */
 public class ResultSetHandler {
-    public <T> T handle(ResultSet resultSet, Class type) throws IllegalAccessException, InstantiationException, SQLException {
+    public <T> T handle(ResultSet resultSet, Class type) throws IllegalAccessException, InstantiationException, SQLException, NoSuchMethodException, InvocationTargetException {
         //直接调用class的方法产生一个实例
         Object pojo = null;
 
@@ -31,7 +31,7 @@ public class ResultSetHandler {
     }
 
     //通过反射赋值
-    private void setValue(Object pojo, Field declaredField, ResultSet resultSet) throws NoSuchMethodException {
+    private void setValue(Object pojo, Field declaredField, ResultSet resultSet) throws NoSuchMethodException, SQLException, InvocationTargetException, IllegalAccessException {
         Method setMethod = pojo.getClass().getMethod("set" + firstWordCapital(declaredField.getName()), declaredField.getType());
         setMethod.invoke(pojo, getResult(resultSet, declaredField));
 
@@ -74,7 +74,17 @@ public class ResultSetHandler {
     **/
 
     private String HumpToUnderline(String para) {
-        this.getClass();
+        StringBuilder stringBuilder = new StringBuilder(para);
+        int temp = 0;
+        if (!para.contains("")) {
+            for (int i = 0; i < para.length(); i++) {
+                if (Character.isUpperCase(para.charAt(i))) {
+                    stringBuilder.insert(i + temp, "_");
+                    temp += 1;
+                }
+            }
+        }
+        return stringBuilder.toString().toUpperCase();
     }
 
     private String firstWordCapital(String name) {

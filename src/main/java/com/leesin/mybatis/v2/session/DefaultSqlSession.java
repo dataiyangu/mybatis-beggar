@@ -1,5 +1,8 @@
 package com.leesin.mybatis.v2.session;
 
+
+import com.leesin.mybatis.v2.Executor.Executor;
+
 /**
  * @description:mybatis的apo ，提供给应用层使用
  * @author: Leesin Dong
@@ -14,7 +17,7 @@ public class DefaultSqlSession {
     public DefaultSqlSession(Configuration configuration) {
         this.configuration = configuration;
         // 根据全局配置决定是否使用缓存装饰
-        this.executor = configuration.newExecutor();
+        this.executor = (Executor) configuration.newExecutor();
     }
 
     public Configuration getConfiguration() {
@@ -29,7 +32,6 @@ public class DefaultSqlSession {
     public <T> T selectOne(String statement, Object[] parameter, Class pojo)  {
         String sql = getConfiguration().getMappedStatement(statement);
         // 打印代理对象时会自动调用toString()方法，触发invoke()
-        new Integer(1);
         return executor.query(sql, parameter, pojo);
 
     }

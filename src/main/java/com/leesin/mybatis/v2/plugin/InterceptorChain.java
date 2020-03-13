@@ -11,7 +11,7 @@ import java.util.List;
  * @modified By:
  */
 public class InterceptorChain {
-    private final List<Interceptor> interceptors = new ArrayList<>();
+    private final List<Interceptor> interceptors = new ArrayList<Interceptor>();
 
     public void addInterceptor(Interceptor interceptor) {
         interceptors.add(interceptor);

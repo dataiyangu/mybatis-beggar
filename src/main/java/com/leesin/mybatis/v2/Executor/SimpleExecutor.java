@@ -7,7 +7,7 @@ package com.leesin.mybatis.v2.Executor;
  * @version:
  * @modified By:
  */
-public class SimpleExecutor {
+public class SimpleExecutor implements Executor{
     @Override
     public <T> T query(String statement, Object[] parameter, Class pojo) {
         StatementHandler statementHandler = new StatementHandler();

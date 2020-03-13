@@ -1,14 +1,14 @@
 package com.leesin.mybatis.v2.session;
 
-import com.leesin.mybatis.v1.Executor;
 import com.leesin.mybatis.v2.Executor.CachingExecutor;
+import com.leesin.mybatis.v2.Executor.Executor;
 import com.leesin.mybatis.v2.Executor.SimpleExecutor;
 import com.leesin.mybatis.v2.TestMybatis;
 import com.leesin.mybatis.v2.annotation.Entity;
 import com.leesin.mybatis.v2.annotation.Select;
 import com.leesin.mybatis.v2.bingding.MapperRegistry;
+import com.leesin.mybatis.v2.plugin.Interceptor;
 import com.leesin.mybatis.v2.plugin.InterceptorChain;
-import org.omg.PortableInterceptor.Interceptor;
 
 import java.io.File;
 import java.lang.annotation.Annotation;
@@ -30,11 +30,11 @@ public class Configuration {
     //维护接口与工厂类关系
     public static final MapperRegistry MAPPER_REGISTRY = new MapperRegistry();
     //维护接口方法与sql关系
-    public static final Map<String, String> mappedStatements = new HashMap<>();
+    public static final Map<String, String> mappedStatements = new HashMap<String, String>();
     //插件
     private InterceptorChain interceptorChain = new InterceptorChain();
     //所有mapper接口
-    private List<Class<?>> mapperList = new ArratList<>();
+    private List<Class<?>> mapperList = new ArrayList<Class<?>>();
     //类所有文件
     private List<String> classPaths = new ArrayList<String>();
 
@@ -118,6 +118,9 @@ public class Configuration {
     public String getMappedStatement(String id,String a) {
         return mappedStatements.get(id);
     }
+    public java.lang.String getMappedStatement(java.lang.String id) {
+        return mappedStatements.get(id);
+    }
 
     public <T> T getMapper(Class<T> clazz, DefaultSqlSession sqlSession) {
         return MAPPER_REGISTRY.getMapper(clazz, sqlSession);
@@ -133,8 +136,8 @@ public class Configuration {
      **/
     public Executor newExecutor() {
         Executor executor = null;
-        if (properties.getString("cached.enabled").equals("true")) {
-            executor = new CachingExecutor(new SimpileExecutor);
+        if (properties.getString("cache.enabled").equals("true")) {
+            executor = new CachingExecutor(new SimpleExecutor());
         } else {
             new SimpleExecutor();
         }
@@ -216,6 +219,7 @@ public class Configuration {
      * @date: 2020/3/12 22:24
      * @auther: Administrator
     **/
+
     private void doPath(File file) {
         if (file.isDirectory()) {
             for (File listFile : file.listFiles()) {
